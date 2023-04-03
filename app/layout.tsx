@@ -1,11 +1,18 @@
-import { Inter } from "next/font/google";
+import { Inter, Kaisei_Tokumin } from "next/font/google";
+import clsx from "clsx";
 import "@/styles/globals.css";
+import MovingCircles from "./MovingCircles";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const kaisei = Kaisei_Tokumin({
+  subsets: ["latin"],
+  variable: "--font-kaisei",
+  weight: ["400", "500", "700", "800"],
+});
 
 export const metadata = {
-  title: "next-app-dir-tailwind-starter",
-  description: "A starter template for next app dir tailwind",
+  title: "Minimalistic Design",
+  description: "Des 10 team project",
   themeColor: "#25292F",
   robots: {
     index: true,
@@ -26,8 +33,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className={inter.variable}>
-      <body>{children}</body>
+    <html lang='en' className={clsx(kaisei.variable, inter.variable)}>
+      <body className='bg-zinc-200'>
+        <div className='relative z-10'>{children}</div>
+        <MovingCircles />
+      </body>
     </html>
   );
 }

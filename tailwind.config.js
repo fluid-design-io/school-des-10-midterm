@@ -5,11 +5,11 @@ module.exports = {
         "./components/**/*.{js,ts,jsx,tsx}",
         "./node_modules/@fluid-design/fluid-ui/dist/**/*.{js,ts,jsx,tsx}",
     ],
-    darkMode: "media",
     theme: {
         extend: {
             fontFamily: {
                 inter: ["var(--font-inter)", "sans-serif"],
+                kaisei: ["var(--font-kaisei)", "serif"],
             },
         },
     },

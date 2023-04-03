@@ -1,0 +1,63 @@
+import React from "react";
+
+export function Circles({ className = "" }) {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='153'
+      height='153'
+      viewBox='0 0 153 153'
+      className={className}
+    >
+      <circle
+        cx='76.5'
+        cy='76.5'
+        r='15.1'
+        stroke='inhert'
+        strokeWidth='2'
+      ></circle>
+      <circle
+        cx='76.5'
+        cy='76.5'
+        r='25.167'
+        stroke='inhert'
+        strokeWidth='2'
+      ></circle>
+      <circle
+        cx='76.5'
+        cy='76.5'
+        r='35.233'
+        stroke='inhert'
+        strokeWidth='2'
+      ></circle>
+      <circle
+        cx='76.5'
+        cy='76.5'
+        r='45.3'
+        stroke='inhert'
+        strokeWidth='2'
+      ></circle>
+      <circle
+        cx='76.5'
+        cy='76.5'
+        r='55.367'
+        stroke='inhert'
+        strokeWidth='2'
+      ></circle>
+      <circle
+        cx='76.5'
+        cy='76.5'
+        r='65.433'
+        stroke='inhert'
+        strokeWidth='2'
+      ></circle>
+      <circle
+        cx='76.5'
+        cy='76.5'
+        r='75.5'
+        stroke='inhert'
+        strokeWidth='2'
+      ></circle>
+    </svg>
+  );
+}
