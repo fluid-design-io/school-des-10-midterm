@@ -18,12 +18,74 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className='w-full border-y border-y-zinc-300'>
+      <section className='w-full border-y border-y-zinc-300 dark:border-y-zinc-700'>
         <div className='container py-16 md:py-24'>
           <h2 className='mb-8 md:mb-12 text-center'>Group members</h2>
           <div className='grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8 w-full'>
             <ProfileCards />
           </div>
+        </div>
+      </section>
+      <section className='w-full'>
+        <div className='container py-16 md:py-24'>
+          <h2 className='mb-8 md:mb-12 text-center'>Team Collaborative Plan</h2>
+          <table className='w-full divide-y divide-zinc-300 dark:divide-zinc-700'>
+            <tr className='divide-x divide-zinc-300 dark:divide-zinc-700'>
+              <th>Goals</th>
+              <td className='p-4'>
+                <ul className='list-disc list-inside'>
+                  <li>Having a smooth teamwork experience.</li>
+                  <li>Being responsive and communicative.</li>
+                  <li>Try to learn from one another.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr className='divide-x divide-zinc-300 dark:divide-zinc-700'>
+              <th>Roles</th>
+              <td className='p-4'>
+                <ul className='list-disc list-inside'>
+                  <li>Oliver: take notes during meetings.</li>
+                  <li>
+                    Janice: reaching out and communicating - setting up
+                    meetings.
+                  </li>
+                  <li>
+                    Hannah and Allison: picking up things that others
+                    aren&apos;t working on.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr className='divide-x divide-zinc-300 dark:divide-zinc-700'>
+              <th>Procedures</th>
+              <td className='p-4'>
+                <ul className='list-disc list-inside'>
+                  <li>
+                    Communication through emails and messages, meeting via Zoom.
+                  </li>
+                  <li>Work together during meetings and also individually.</li>
+                  <li>Send out w2m and have a shared work platform.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr className='divide-x divide-zinc-300 dark:divide-zinc-700'>
+              <th>Relationships</th>
+              <td className='p-4'>
+                <ul className='list-disc list-inside'>
+                  <li>Team name: team 3</li>
+                  <li>Respect each other.</li>
+                  <li>Learn from our diverse backgrounds.</li>
+                  <li>Understand each other&apos;s different work habits</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section className='w-full border-y border-y-zinc-300 dark:border-y-zinc-700'>
+        <div className='container py-16 md:py-24'>
+          <h2 className='mb-8 md:mb-12 text-center'>Final Creative Matrix</h2>
+          <p>In development...</p>
         </div>
       </section>
     </main>
