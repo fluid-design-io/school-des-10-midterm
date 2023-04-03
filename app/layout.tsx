@@ -34,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={clsx(kaisei.variable, inter.variable)}>
-      <body className='bg-zinc-200'>
+      <body className='bg-zinc-200 dark:bg-zinc-900'>
         <div className='relative z-10'>{children}</div>
         <MovingCircles />
       </body>

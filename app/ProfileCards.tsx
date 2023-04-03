@@ -32,8 +32,8 @@ export const ProfileCard = ({
   image: StaticImageData;
 }) => {
   return (
-    <div className='flex flex-col items-center p-2 rounded ring-zinc-800 ring-opacity-5 ring-1 backdrop-blur-sm bg-zinc-50/20 pt-4'>
-      <div className='p-2 ring-1 ring-zinc-800 ring-opacity-5 rounded-full'>
+    <div className='flex flex-col items-center p-2 rounded ring-zinc-800 ring-opacity-5 dark:ring-zinc-50 dark:ring-opacity-10 ring-1 backdrop-blur bg-zinc-50/20 dark:bg-zinc-700/20 pt-4'>
+      <div className='p-2 ring-1 ring-zinc-800 ring-opacity-5 rounded-full dark:ring-zinc-50 dark:ring-opacity-10'>
         <Image
           src={image}
           alt={name}
