@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { ProfileCards } from "./ProfileCards";
+import imageMatrix from "@/public/images/matrix.jpg";
 
 export default function Home() {
   return (
@@ -31,7 +33,7 @@ export default function Home() {
           <h2 className='mb-8 md:mb-12 text-center'>Team Collaborative Plan</h2>
           <table className='w-full divide-y divide-zinc-300 dark:divide-zinc-700'>
             <tr className='divide-x divide-zinc-300 dark:divide-zinc-700'>
-              <th>Goals</th>
+              <th className='p-4'>Goals</th>
               <td className='p-4'>
                 <ul className='list-disc list-inside'>
                   <li>Having a smooth teamwork experience.</li>
@@ -41,7 +43,7 @@ export default function Home() {
               </td>
             </tr>
             <tr className='divide-x divide-zinc-300 dark:divide-zinc-700'>
-              <th>Roles</th>
+              <th className='p-4'>Roles</th>
               <td className='p-4'>
                 <ul className='list-disc list-inside'>
                   <li>Oliver: take notes during meetings.</li>
@@ -57,7 +59,7 @@ export default function Home() {
               </td>
             </tr>
             <tr className='divide-x divide-zinc-300 dark:divide-zinc-700'>
-              <th>Procedures</th>
+              <th className='p-4'>Procedures</th>
               <td className='p-4'>
                 <ul className='list-disc list-inside'>
                   <li>
@@ -69,7 +71,7 @@ export default function Home() {
               </td>
             </tr>
             <tr className='divide-x divide-zinc-300 dark:divide-zinc-700'>
-              <th>Relationships</th>
+              <th className='p-4'>Relationships</th>
               <td className='p-4'>
                 <ul className='list-disc list-inside'>
                   <li>Team name: team 3</li>
@@ -85,7 +87,12 @@ export default function Home() {
       <section className='w-full border-y border-y-zinc-300 dark:border-y-zinc-700'>
         <div className='container py-16 md:py-24'>
           <h2 className='mb-8 md:mb-12 text-center'>Final Creative Matrix</h2>
-          <p>In development...</p>
+          <Image
+            src={imageMatrix}
+            alt='Final Creative Matrix'
+            placeholder='blur'
+            className='rounded'
+          />
         </div>
       </section>
     </main>
