@@ -6,6 +6,7 @@ import logo from "@/public/images/logo.png";
 import sketch from "@/public/images/sketch.png";
 import storyboard from "@/public/images/storyboard.png";
 import poster from "@/public/images/poster.png";
+import checklist from "@/public/images/checklist.png";
 
 export default function Home() {
   return (
@@ -157,14 +158,26 @@ export default function Home() {
       </section>
       <section className='w-full border-y border-y-zinc-300 dark:border-y-zinc-700'>
         <div className='container py-16 md:py-24'>
-          <h2 className='mb-8 md:mb-12 text-center'>Presentation</h2>
-          {/* <Image
-            src={storyboard}
-            alt='Storyboard'
+          <h2 className='mb-8 md:mb-12 text-center'>Focus Checklist</h2>
+          <Image
+            src={checklist}
+            alt='Checklist'
             placeholder='blur'
             className='rounded mx-auto max-w-3xl'
-          /> */}
-          Not yet...
+          />
+        </div>
+      </section>
+      <section className='w-full border-y border-y-zinc-300 dark:border-y-zinc-700'>
+        <div className='container py-16 md:py-24'>
+          <h2 className='mb-8 md:mb-12 text-center'>Presentation</h2>
+          <div className='rounded h-[calc(100vh-6rem)] flex justify-center items-center overflow-hidden mx-auto max-w-5xl'>
+            <iframe
+              src='https://docs.google.com/presentation/d/14WU88xdoKiEh-MKrq4SZgJ_9OTR5joU4eSyuYIDCk8s/edit?usp=sharing&embed?start=false&loop=false&delayms=3000'
+              className='w-full h-full'
+              frameBorder={0}
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
