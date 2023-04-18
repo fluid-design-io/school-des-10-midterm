@@ -1,6 +1,11 @@
 import Image from "next/image";
 import { ProfileCards } from "./ProfileCards";
 import imageMatrix from "@/public/images/matrix.jpg";
+import moodboard from "@/public/images/moodboard.jpg";
+import logo from "@/public/images/logo.png";
+import sketch from "@/public/images/sketch.png";
+import storyboard from "@/public/images/storyboard.png";
+import poster from "@/public/images/poster.png";
 
 export default function Home() {
   return (
@@ -28,7 +33,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='w-full'>
+      <section className='w-full max-w-3xl mx-auto'>
         <div className='container py-16 md:py-24'>
           <h2 className='mb-8 md:mb-12 text-center'>Team Collaborative Plan</h2>
           <table className='w-full divide-y divide-zinc-300 dark:divide-zinc-700'>
@@ -91,8 +96,75 @@ export default function Home() {
             src={imageMatrix}
             alt='Final Creative Matrix'
             placeholder='blur'
-            className='rounded'
+            className='rounded mx-auto max-w-3xl'
           />
+        </div>
+      </section>
+      <section className='w-full border-y border-y-zinc-300 dark:border-y-zinc-700'>
+        <div className='container py-16 md:py-24'>
+          <h2 className='mb-8 md:mb-12 text-center'>Moodboard</h2>
+          <Image
+            src={moodboard}
+            alt='Moodboard'
+            placeholder='blur'
+            className='rounded mx-auto max-w-3xl'
+          />
+        </div>
+      </section>
+      <section className='w-full border-y border-y-zinc-300 dark:border-y-zinc-700'>
+        <div className='container py-16 md:py-24'>
+          <h2 className='mb-8 md:mb-12 text-center'>Logo</h2>
+          <Image
+            src={logo}
+            alt='Logo'
+            placeholder='blur'
+            className='rounded-full mx-auto max-w-xs'
+          />
+        </div>
+      </section>
+      <section className='w-full border-y border-y-zinc-300 dark:border-y-zinc-700'>
+        <div className='container py-16 md:py-24'>
+          <h2 className='mb-8 md:mb-12 text-center'>Sketch</h2>
+          <Image
+            src={sketch}
+            alt='Sketch'
+            placeholder='blur'
+            className='rounded mx-auto max-w-3xl'
+          />
+        </div>
+      </section>
+      <section className='w-full border-y border-y-zinc-300 dark:border-y-zinc-700'>
+        <div className='container py-16 md:py-24'>
+          <h2 className='mb-8 md:mb-12 text-center'>Storyboard</h2>
+          <Image
+            src={storyboard}
+            alt='Storyboard'
+            placeholder='blur'
+            className='rounded mx-auto max-w-3xl'
+          />
+        </div>
+      </section>
+      <section className='w-full border-y border-y-zinc-300 dark:border-y-zinc-700'>
+        <div className='container py-16 md:py-24'>
+          <h2 className='mb-8 md:mb-12 text-center'>Poster</h2>
+          <Image
+            src={poster}
+            alt='Poster'
+            placeholder='blur'
+            className='rounded mx-auto max-w-3xl'
+          />
+        </div>
+      </section>
+      <section className='w-full border-y border-y-zinc-300 dark:border-y-zinc-700'>
+        <div className='container py-16 md:py-24'>
+          <h2 className='mb-8 md:mb-12 text-center'>Presentation</h2>
+          {/* <Image
+            src={storyboard}
+            alt='Storyboard'
+            placeholder='blur'
+            className='rounded mx-auto max-w-3xl'
+          /> */}
+          Not yet...
         </div>
       </section>
     </main>
