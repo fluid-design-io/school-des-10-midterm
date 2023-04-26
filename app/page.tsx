@@ -7,6 +7,8 @@ import sketch from "@/public/images/sketch.png";
 import storyboard from "@/public/images/storyboard.png";
 import poster from "@/public/images/poster.png";
 import checklist from "@/public/images/checklist.png";
+import conceptPoster from "@/public/images/concept-poster.jpg";
+import imageTeamMatrix from "@/public/images/team-matrix.jpg";
 
 export default function Home() {
   return (
@@ -88,6 +90,28 @@ export default function Home() {
               </td>
             </tr>
           </table>
+        </div>
+      </section>
+      <section className='w-full border-y border-y-zinc-300 dark:border-y-zinc-700'>
+        <div className='container py-16 md:py-24'>
+          <h2 className='mb-8 md:mb-12 text-center'>Concept Poster</h2>
+          <Image
+            src={conceptPoster}
+            alt='Concept Poster'
+            placeholder='blur'
+            className='rounded mx-auto max-w-3xl'
+          />
+        </div>
+      </section>
+      <section className='w-full border-y border-y-zinc-300 dark:border-y-zinc-700'>
+        <div className='container py-16 md:py-24'>
+          <h2 className='mb-8 md:mb-12 text-center'>Creative Matrix</h2>
+          <Image
+            src={imageTeamMatrix}
+            alt='Creative Matrix'
+            placeholder='blur'
+            className='rounded mx-auto max-w-3xl'
+          />
         </div>
       </section>
       <section className='w-full border-y border-y-zinc-300 dark:border-y-zinc-700'>
