@@ -105,10 +105,10 @@ export default function Home() {
       </section>
       <section className='w-full border-y border-y-zinc-300 dark:border-y-zinc-700'>
         <div className='container py-16 md:py-24'>
-          <h2 className='mb-8 md:mb-12 text-center'>Creative Matrix</h2>
+          <h2 className='mb-8 md:mb-12 text-center'>Importance Matrix</h2>
           <Image
             src={imageTeamMatrix}
-            alt='Creative Matrix'
+            alt='Importance Matrix'
             placeholder='blur'
             className='rounded mx-auto max-w-3xl'
           />
